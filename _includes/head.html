@@ -30,8 +30,37 @@
 
 {% if page.custom_css %}
 {% for stylesheet in page.custom_css %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets_local/css/{{ stylesheet }}.css">
+<style>
+  .design, .info{
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container{
+      align-self: center;
+      max-width: 80%;
+      margin-bottom: 15px;
+  }
+  h4{
+      color: rebeccapurple;
+  }
+
+</style>
 {% endfor %}
 {% endif %}
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets_local/css/footer.css">
+<style>
+  .footer-logo-csontainer {
+    margin-top:15px;
+  }
+  .footer-logo{
+      display: inline-block;
+      width: 50px; /* Adjust width as needed */
+      height: 50px; /* Adjust height as needed */
+      right: 10px;
+  }
+    
+  .btn{
+      float: right; /* Use float property */
+      margin-left : 5px;
+  }
+</style>
