@@ -27,7 +27,7 @@ url: "https://matteobregola.github.io/" # the base hostname & protocol for your 
 github_username:  matteobregola
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

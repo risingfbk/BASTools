@@ -24,7 +24,7 @@ custom_css: framework
     <div class="design">
         <h2>Design</h2>
         <div class="image-container">
-        <img src="/assets/images/FrameworkDesign.png" alt="FrameworkDesign" />
+        <img src="{{ 'assets_local/images/FrameworkDesign.png' | relative_url }}" alt="FrameworkDesign" />
         </div>
         The elements are initially categorized into two primary classifications: 
         Features and Elements. 
@@ -43,5 +43,5 @@ custom_css: framework
         </ul>
         
     </div>
-    <a href="/framework/overview" class="btn btn--primary">Overview ></a>
+    <a href="{{'/framework/overview' | relative_url }}" class="btn btn--primary">Overview ></a>
 </div>

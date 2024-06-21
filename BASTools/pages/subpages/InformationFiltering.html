@@ -334,13 +334,13 @@ custom_css: framework
         </li>
     </ul>
     <div class="image-container">
-        <img src="/assets/images/InformationFiltering.png" alt="InformationFiltering" />
+        <img src="{{ 'assets_local/images/InformationFiltering.png' | relative_url }} alt="InformationFiltering" />
     </div>
     
     The picture above shows the logical connection between the information and how it can be used in order to 
      filter activities before launching a simulation or to sort out the results.
     </br>
     </div>
-    <a href="/framework/simulation" class="btn btn--primary">Simulation ></a>
-    <a href="/framework/results" class="btn btn--primary">&lt Results</a>
+    <a href="{{'/framework/simulation' | relative_url }}" class="btn btn--primary">Simulation ></a>
+    <a href="{{'/framework/results' | relative_url }}" class="btn btn--primary">&lt Results</a>
 </div>

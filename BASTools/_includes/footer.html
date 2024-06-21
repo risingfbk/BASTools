@@ -11,10 +11,6 @@
           {% endif %}
         {% endfor %}
       {% endif %}
-  
-      {% unless site.atom_feed.hide %}
-        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-      {% endunless %}
     </ul>
   </div>
   
@@ -22,12 +18,12 @@
   <div class="footer-logo-container">
     <div class="footer-logo">
         <a href="https://st.fbk.eu/">
-        <img src="{{ 'assets/images/fbk.png' | relative_url }}" alt="fbk">
+        <img src="{{ 'assets_local/images/fbk.png' | relative_url }}" alt="fbk">
         </a>
     </div>
     <div class="footer-logo">
         <a href="https://www.unitn.it/">
-        <img src="{{ 'assets/images/unitn.png' | relative_url }}" alt="fbk">
+        <img src="{{ 'assets_local/images/unitn.png' | relative_url }}" alt="fbk">
         </a>
     </div>
   </div>
