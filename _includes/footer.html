@@ -1,3 +1,17 @@
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+  <div class="footer-logo-container">
+    <div class="footer-logo">
+        <a href="https://st.fbk.eu/">
+        <img src="{{ 'assets_local/images/fbk.png' | relative_url }}" alt="fbk">
+        </a>
+    </div>
+    <div class="footer-logo">
+        <a href="https://www.unitn.it/">
+        <img src="{{ 'assets_local/images/unitn.png' | relative_url }}" alt="fbk">
+        </a>
+    </div>
+  </div>
+  
 <div class="page__footer-follow">
     <ul class="social-icons">
       {% if site.data.ui-text[site.locale].follow_label %}
@@ -12,18 +26,4 @@
         {% endfor %}
       {% endif %}
     </ul>
-  </div>
-  
-  <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-  <div class="footer-logo-container">
-    <div class="footer-logo">
-        <a href="https://st.fbk.eu/">
-        <img src="{{ 'assets_local/images/fbk.png' | relative_url }}" alt="fbk">
-        </a>
-    </div>
-    <div class="footer-logo">
-        <a href="https://www.unitn.it/">
-        <img src="{{ 'assets_local/images/unitn.png' | relative_url }}" alt="fbk">
-        </a>
-    </div>
   </div>
