@@ -1,7 +1,3 @@
-.colorme {
-    color:white !important;
-}
-
 .design, .info{
     display: flex;
     flex-direction: column;

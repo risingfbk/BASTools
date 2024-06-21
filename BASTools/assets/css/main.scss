@@ -1,0 +1,23 @@
+---
+---
+
+@charset "utf-8";
+
+//@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+.footer-logo-csontainer {
+    margin-top:15px;
+}
+.footer-logo{
+    display: inline-block;
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    right: 10px;
+}
+  
+.btn{
+    float: right; /* Use float property */
+    margin-left : 5px;
+}
