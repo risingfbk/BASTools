@@ -1,0 +1,17 @@
+.colorme {
+    color:white !important;
+}
+
+.design, .info{
+    display: flex;
+    flex-direction: column;
+}
+.image-container{
+    align-self: center;
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+h4{
+    color: rebeccapurple;
+}
+

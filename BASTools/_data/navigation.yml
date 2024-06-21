@@ -1,0 +1,12 @@
+main:
+  - title: "Technology"
+    url: /technology
+  - title: "Framework"
+    url: /framework
+  - title: "Overview"
+    url: /framework/overview
+  - title: "Study Case"
+    url: /studycase
+  - title: "About"
+    url: /about
+
