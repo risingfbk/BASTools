@@ -16,12 +16,27 @@
   {%- endif %}
 </script>
 
+<!-- Page-specific css -->
+{% if page.custom_css %}
+{% for stylesheet in page.custom_css %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets_local/css/{{ stylesheet }}.css">
+{% endfor %}
+{% endif %}
+
+<!-- Page-specific js-->
+{% if page.custom_js %}
+{% for stylesheet in page.custom_css %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets_local/js/{{ stylesheet }}.js">
+{% endfor %}
+{% endif %}
+
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets_local/css/footer.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets_local/css/framework.css' | relative_url }}">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}

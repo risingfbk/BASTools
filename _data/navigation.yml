@@ -9,4 +9,6 @@ main:
     url: /studycase
   - title: "About"
     url: /about
+  - title: "Finder"
+    url: /finder
 

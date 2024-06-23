@@ -1,13 +1,57 @@
-.design, .info{
+.design,
+.info {
     display: flex;
     flex-direction: column;
 }
-.image-container{
+
+.image-container {
     align-self: center;
     max-width: 80%;
     margin-bottom: 15px;
 }
-h4{
-    color: rebeccapurple;
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
+.tg td {
+    border-color: #454A4E;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: #454A4E;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-feature {
+    text-align: left;
+    vertical-align: middle
+}
+
+.tg-label {
+    background-color: #60CCD2;
+    text-align: center;
+    vertical-align: middle
+}
+
+#inf-filt{
+    background-color: #50C7CD
+}
+#comp-elem{
+    background-color: #f280f6
+}
