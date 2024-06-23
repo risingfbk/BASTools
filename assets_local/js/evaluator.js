@@ -6,5 +6,5 @@ function eval(){
         checkedValues.push(checkbox.value);
     });
     
-    console.log(checkedValues); 
+    console.log("Items received:",checkedValues); 
 }

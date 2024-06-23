@@ -7,8 +7,8 @@ main:
     url: /framework/overview
   - title: "Study Case"
     url: /studycase
-  - title: "About"
-    url: /about
   - title: "Finder"
     url: /finder
+  - title: "About"
+    url: /about
 

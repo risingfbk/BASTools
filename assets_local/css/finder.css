@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+label {
+    margin-left: 8px;
+}
+p{
+    display: inline;
+    color:#609FA5;
+}

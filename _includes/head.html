@@ -25,8 +25,8 @@
 
 <!-- Page-specific js-->
 {% if page.custom_js %}
-{% for stylesheet in page.custom_css %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets_local/js/{{ stylesheet }}.js">
+{% for file in page.custom_js %}
+<script src="{{ site.baseurl }}/assets_local/js/{{ file }}.js"></script>
 {% endfor %}
 {% endif %}
 
