@@ -17,4 +17,5 @@ p{
 
 .checklist-item:hover{
     background-color: #60CCD2;
+    cursor: pointer;
 }

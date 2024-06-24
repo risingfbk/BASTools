@@ -1,3 +1,4 @@
+
 function eval(){
     const checkedValues = [];
     const checkboxes = document.querySelectorAll('input[name="checklist"]:checked');
@@ -7,4 +8,9 @@ function eval(){
     });
     
     console.log("Items received:",checkedValues); 
+}
+
+function toggleCheckbox(id) {
+    const checkbox = document.getElementById(id);
+    checkbox.checked = !checkbox.checked;
 }
