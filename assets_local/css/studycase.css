@@ -1,0 +1,22 @@
+.charts{
+    display: flex;
+    flex-direction: column;
+}
+canvas{
+    flex: 1;
+    object-fit: contain;
+    align-self: center;
+    margin-bottom: 10px;
+}
+p {
+    display: inline;
+    color:#609FA5;
+}
+.it{
+    color: #464a4d;
+    font-style: italic;
+}
+
+#chart2{
+    margin-top: 20px ;
+}

@@ -2,5 +2,78 @@
 layout: splash
 title: Study Case
 permalink: /studycase
+custom_css: studycase
+custom_js: studycase
 ---    
-The framework has been tested with MITRE Caldera
+The framework has been tested with MITRE Caldera. The <p>"Overall Score"</p> obtained by evaluating the mean
+over all the categories of the framework is <p>47%</p>.
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<div class="charts">
+    <canvas id="Caldera-Results-area"></canvas>
+</div>
+<script>
+    new Chart("Caldera-Results-area", {
+        type: "radar",
+        data: {
+            labels: [
+                'Architecture',
+                'Organization',
+                'Attack',
+                'Results',
+                'Information Filtering',
+                'Simulation',
+                'Environment',
+                'Other'
+            ],
+            datasets: getData(),
+        },
+        options: {
+            scales: {
+                r: {
+                    min: 0,
+                    max: 100,
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 10
+                    },
+                }
+            }
+        },
+    });
+</script>
+
+</br>
+
+From the results we can see that the tool has a performance that is very different based on 
+the category (<p class="it">note also the table below</p>), for example it has a very good <a href="{{'/framework/organization' | relative_url }}">"Organization"</a> result (<p>90%</p>), this is due to 
+the fact that tool is based on the MITRE ATT&CK framework that is very well structured. It is also
+important to point out that the analysis framework itself has been developed by studying MITRE ATT&CK, therefore
+this could be a biased result. 
+</br></br>
+It has a notable performace also for the <a href="{{'/framework/attack' | relative_url }}">"Attack"</a> and <a href="{{'/framework/simulation' | relative_url }}">"Simulation"</a> categories (<p>69%</p> and <p>71%</p>), reflecting the good capabilities
+of the software to help red team simulations.
+</br></br>
+On the other hand it has bad results on the <a href="{{'/framework/results' | relative_url }}">"Results"</a> and <a href="{{'/framework/informationfiltering' | relative_url }}">"Information and Filtering"</a> categories (respectively <p>28%</p>, <p>31%</p>).
+
+<div class="charts" id="chart2">
+    <canvas id="Caldera-Results-table"></canvas>
+</div>
+<script>
+    new Chart("Caldera-Results-table", {
+        type: "bar",
+        data: {
+            labels: [
+                'Architecture',
+                'Organization',
+                'Attack',
+                'Results',
+                'Information Filtering',
+                'Simulation',
+                'Environment',
+                'Other'
+            ],
+            datasets: getData(),
+        },
+    });
+</script>

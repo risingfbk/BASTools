@@ -14,3 +14,7 @@ p{
     display: inline;
     color:#609FA5;
 }
+
+.checklist-item:hover{
+    background-color: #60CCD2;
+}
