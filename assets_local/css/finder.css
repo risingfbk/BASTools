@@ -19,3 +19,14 @@ p{
     background-color: #60CCD2;
     cursor: pointer;
 }
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#choice1{
+    background-color: #60CCD2;
+    color: #3d4144;
+}

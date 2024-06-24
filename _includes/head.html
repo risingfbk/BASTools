@@ -33,6 +33,12 @@
 {% endfor %}
 {% endif %}
 
+<!-- Tool data-->
+{% if page.tool_data %}
+{% for file in page.tool_data %}
+<script src="{{ site.baseurl }}/tool_data/{{ file }}.js"></script>
+{% endfor %}
+{% endif %}
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
