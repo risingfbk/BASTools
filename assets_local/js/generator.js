@@ -178,7 +178,7 @@ const choice2_formHTML = `
  <div class="checklist-item" onclick="toggleCheckbox('item31')"> <input onclick="event.stopPropagation()" type="checkbox" id="item31" name="checklist"
     value="Pre-Compromise"> <label onclick="event.stopPropagation()" for="item31">Pre-Compromise</label> </div>
  <div class="checklist-item" onclick="toggleCheckbox('item32')"> <input onclick="event.stopPropagation()" type="checkbox" id="item32" name="checklist"
-    value="Reusable Inonclick="event.stopPropagation()" formation"> <label onclick="event.stopPropagation()" for="item32">Reusable Inonclick="event.stopPropagation()" formation</label> </div>
+    value="Reusable Information"> <label onclick="event.stopPropagation()" for="item32">Reusable Information</label> </div>
  <div class="checklist-item" onclick="toggleCheckbox('item33')"> <input onclick="event.stopPropagation()" type="checkbox" id="item33" name="checklist"
     value="System Detection"> <label onclick="event.stopPropagation()" for="item33">System Detection</label> </div>
  <div class="checklist-item" onclick="toggleCheckbox('item34')"> <input onclick="event.stopPropagation()" type="checkbox" id="item34" name="checklist"
@@ -250,7 +250,7 @@ const choice2_formHTML = `
     value="Outputs"> <label onclick="event.stopPropagation()" for="item66">Outputs</label> </div>
  <div class="checklist-item" onclick="toggleCheckbox('item67')"> <input onclick="event.stopPropagation()" type="checkbox" id="item67" name="checklist"
     value="Logs "> <label onclick="event.stopPropagation()" for="item67">Logs </label> </div>
-<div class="category">Inonclick="event.stopPropagation()" formation and Filtering</div>
+<div class="category">Information and Filtering</div>
  <div class="checklist-item" onclick="toggleCheckbox('item68')"> <input onclick="event.stopPropagation()" type="checkbox" id="item68" name="checklist"
     value="Name"> <label onclick="event.stopPropagation()" for="item68">Name</label> </div>
  <div class="checklist-item" onclick="toggleCheckbox('item69')"> <input onclick="event.stopPropagation()" type="checkbox" id="item69" name="checklist"
