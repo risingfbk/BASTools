@@ -42,7 +42,6 @@ function choice(clicked){
 
 function toggleCheckbox(id) {
     // function that togles the checkboxes
-    console.log("toggleCheckbox");
     const checkbox = document.getElementById(id);
     checkbox.checked = !checkbox.checked;
 }
@@ -71,7 +70,7 @@ function selectall(){
 
 // HTML content for the form of choice1
 const choice1_formHTML = `
-<onclick="event.stopPropagation()" form>
+<form>
 <div class="checklist-item" onclick="toggleCheckbox('item1')" >
     <input onclick="event.stopPropagation()" type="checkbox" id="item1" name="checklist" value="GUI">
     <label onclick="event.stopPropagation()" for="item1">GUI</label>
@@ -112,7 +111,7 @@ const choice1_formHTML = `
     <input onclick="event.stopPropagation()" type="checkbox" id="item10" name="checklist" value="Pre-Compromise">
     <label onclick="event.stopPropagation()" for="item10">Pre-Compromise</label>
 </div>
-</onclick="event.stopPropagation()" form>
+<form>
 `;
 
 const choice2_formHTML = `
