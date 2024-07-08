@@ -20,3 +20,6 @@ p {
 #chart2{
     margin-top: 20px ;
 }
+canvas{
+    max-width: 80%;
+}
