@@ -22,10 +22,8 @@ title: BASTools
 author: Matteo Bregola
 email: matteobregola@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Breach and Attack Simulation "BAS" Tool knowledge base.
-  Breach and Attack Simulation (BAS) is an offesnsive security technology that is used by red team experts, 
-  the BAS Tools are software used to perform this kind of operations. This website describes the state of the
-  art of the technology and propose a framework to understand BAS and chose the most appropriate tool.
+  Welcome to the Breach and Attack Simulation (BAS) Tool Knowledge Base! Explore the latest in BAS technology,
+   analysis frameworks, and top solutions to enhance your security strategy.
 baseurl: "/BASTools" # the subpath of your site, e.g. /blog
 url: "https://matteobregola.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  matteobregola

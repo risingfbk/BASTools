@@ -23,3 +23,8 @@ p {
 canvas{
     max-width: 80%;
 }
+
+.disclaimer{
+    font-size: smaller;
+    color: #5c5f61;
+}

@@ -5,8 +5,8 @@ main:
     url: /framework
   - title: "Overview"
     url: /framework/overview
-  - title: "Study Case"
-    url: /studycase
+  - title: "Case Study"
+    url: /casestudy
   - title: "Finder"
     url: /finder
   - title: "About"
