@@ -37,7 +37,7 @@ caldera_data=[
     {
         "Ref": "A8",
         "Feature": "Containerized Deployment",
-        "Value": "n"
+        "Value": "y"
     },
     {
         "Ref": "A9",

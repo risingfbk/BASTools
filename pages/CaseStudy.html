@@ -7,13 +7,16 @@ custom_js: casestudy
 ---  
 <h1>MITRE CALDERA® Case Study</h1>  
 The framework has been tested with MITRE CALDERA®. The <p>"Overall Score"</p> obtained by evaluating the mean
-over all the categories of the framework is <p>47%</p>.
+over all the categories of the framework is <p>43%</p>.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <div class="charts">
     <canvas id="Caldera-Results-area"></canvas>
 </div>
 <script>
+    Chart.defaults.backgroundColor = '#ffff';
+    Chart.defaults.borderColor = 'rgba(255,255,255,0.2)';
+    Chart.defaults.color = '#ffff';
     new Chart("Caldera-Results-area", {
         type: "radar",
         data: {
@@ -38,8 +41,8 @@ over all the categories of the framework is <p>47%</p>.
                     ticks: {
                         stepSize: 10
                     },
-                }
-            }
+                },
+            },
         },
     });
 </script>
@@ -61,6 +64,7 @@ On the other hand it has insufficient performance on the <a href="{{'/framework/
     <canvas id="Caldera-Results-table"></canvas>
 </div>
 <script>
+
     new Chart("Caldera-Results-table", {
         type: "bar",
         data: {
@@ -76,9 +80,18 @@ On the other hand it has insufficient performance on the <a href="{{'/framework/
             ],
             datasets: get_bar_data(),
         },
+        options: {
+            title: {
+                display: true,
+                text: 'Results by category'
+            },
+            legend: {
+                display: false
+            },
+        },
+        
     });
 </script>
-</br></br></br></br>
 
 <p class="disclaimer">
 Disclaimer:</br>

@@ -1,28 +1,33 @@
-.charts{
+.charts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+    max-width: 60%;           
+    margin: 0 auto;           
 }
-canvas{
+
+canvas {
     flex: 1;
     object-fit: contain;
-    align-self: center;
+    align-self: center;      
     margin-bottom: 10px;
+    width: 100%;             
 }
+
 p {
     display: inline;
     color:#609FA5;
 }
 .it{
-    color: #464a4d;
+    color: #ffffff;
     font-style: italic;
 }
 
 #chart2{
     margin-top: 20px ;
 }
-canvas{
-    max-width: 80%;
-}
+
 
 .disclaimer{
     font-size: smaller;

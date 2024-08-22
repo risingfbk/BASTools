@@ -31,7 +31,7 @@ keywords: "BAS, Breach and Attack Simulation, BAS Tools, Automated Adversary Emu
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes
-#minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "contrast"  "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

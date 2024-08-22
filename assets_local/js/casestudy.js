@@ -14,10 +14,10 @@ const radar_data = [{
 // Data for the bar 
 const bar_data = [{
     label: 'Caldera',
-    data: [46, 90, 69, 28, 31, 71, 40, 41],
+    data: [54, 90, 69, 28, 31, 71, 40, 41],
     fill: true,
     backgroundColor: [
-        'rgb(245, 231, 130)',
+        'rgb(220, 224, 130)',
         'rgb(113, 191, 121)',
         'rgb(175, 212, 127)',
         'rgb(237, 104, 104)',
@@ -39,9 +39,9 @@ const bar_data = [{
 
     ],
     pointBackgroundColor: '#60CCD2',
-    pointBorderColor: '#fff',
+    pointBorderColor: '#FFFFFF',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: '#60CCD2'
+    pointHoverBorderColor: '#60CCD2',
 }];
 
 // function to call to return the data

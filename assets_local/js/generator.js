@@ -1,3 +1,15 @@
+// Color inversion for the dark mode:
+let darkMode = true;
+document.addEventListener('DOMContentLoaded', (event) => {
+   if (darkMode){
+      document.getElementById('choice2').style="color:#ffffff; background-color:#6f777d";
+   }
+  
+});
+
+
+
+
 // THis function evaluates which of the two types of form should the website display,
 // The Default one (choice1) is the simple with few features,
 // the other one contains all the feature
