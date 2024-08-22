@@ -39,9 +39,10 @@ over all the categories of the framework is <p>43%</p>.
                     max: 100,
                     beginAtZero: true,
                     ticks: {
-                        stepSize: 10
+                        stepSize: 10,
+                        backdropColor: 'transparent',
                     },
-                },
+                }
             },
         },
     });
@@ -64,9 +65,10 @@ On the other hand it has insufficient performance on the <a href="{{'/framework/
     <canvas id="Caldera-Results-table"></canvas>
 </div>
 <script>
-
+    Chart.defaults.plugins.legend= false;
     new Chart("Caldera-Results-table", {
         type: "bar",
+        title:"Results by Category",
         data: {
             labels: [
                 'Architecture',
@@ -83,16 +85,13 @@ On the other hand it has insufficient performance on the <a href="{{'/framework/
         options: {
             title: {
                 display: true,
-                text: 'Results by category'
-            },
-            legend: {
-                display: false
+                color: 'ffff',
             },
         },
         
     });
 </script>
-
+</br></br></br></br>
 <p class="disclaimer">
 Disclaimer:</br>
 The performance analysis and results presented herein are based on the use of CALDERA®,

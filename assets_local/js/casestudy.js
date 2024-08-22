@@ -1,7 +1,7 @@
 // Data for the radar 
 const radar_data = [{
     label: 'Caldera',
-    data: [46, 90, 69, 28, 31, 71, 40, 41],
+    data: [54, 90, 69, 28, 31, 71, 40, 41],
     fill: true,
     backgroundColor: 'rgba(96, 294, 219, 0.2)',
     borderColor: '#60CCD2',
@@ -13,7 +13,6 @@ const radar_data = [{
 
 // Data for the bar 
 const bar_data = [{
-    label: 'Caldera',
     data: [54, 90, 69, 28, 31, 71, 40, 41],
     fill: true,
     backgroundColor: [
