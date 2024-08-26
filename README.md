@@ -29,6 +29,6 @@ To run the server locally:
 ## Contributing
 The website is currently in BETA. It needs a general review of its style and content. Additionally, many tools available on the market have not yet been evaluated.
 
-If you are interested in evaluating a tool using the proposed framework, your analysis would be greatly appreciated and added to the website.
+If you are interested in evaluating a tool using the proposed framework, your analysis would be greatly appreciated and added to the website (see how to contact me in the About section).
 
 Finally, migrating to a dynamic solution and using a database for storing and retrieving information about the tools could significantly enhance the website.
