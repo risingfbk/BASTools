@@ -15,7 +15,7 @@ custom_css: finder
     <div class="introduction">
         This section is a <p class="highlight">Beta</p>, the idea is to provide the user a list of features that it has to choose based
         on their requirements, then evaluate which Breach and Attack Simulation Tool satisfies these features and return them.
-        As for now there are two possible form that can be used to assist the choice:
+        As for now there are three possible form that can be used to assist the choice:
         <ul>
             <li>
                 <p>Default</p> -> Contains a subset of the framework's features that is faster to use and get a result.
@@ -23,12 +23,15 @@ custom_css: finder
             <li>
                 <p>Complete</p> -> Contains all the framework's features, and it can be used if the user is interested in specific features.
             </li>
+            <li>
+                <p>High-Level</p> -> Contains the more high-level features.
         </ul>
     </div>
     </br>
     <div class="choices">
         <div class="btn btn--primary" id="choice1" onclick="choice('choice1')">Default</div>
         <div class="btn btn--primary" id="choice2" onclick="choice('choice2')">Complete</div>
+        <div class="btn btn--primary" id="choice3" onclick="choice('choice3')">High-Level</div>
     </div>
     <div>
         <button class="selectall" id="selectall" onclick="selectall()">Select All</button>

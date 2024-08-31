@@ -3,6 +3,7 @@ let darkMode = true;
 document.addEventListener('DOMContentLoaded', (event) => {
    if (darkMode){
       document.getElementById('choice2').style="color:#ffffff; background-color:#6f777d";
+      document.getElementById('choice3').style="color:#ffffff; background-color:#6f777d";
    }
   
 });
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 let choice1=true;
 let choice2=false;
+let choice3=false;
 let select_status=false;
 
 function choice(clicked){
@@ -24,24 +26,41 @@ function choice(clicked){
     
   
     document.getElementsByClassName('evaluator-results')[0].innerHTML=''; // delete previous result    
-    // User clicked one of the two buttons
+    // User clicked one of the the three buttons
     if(clicked=='choice1'){
         if(choice1==false){
             choice2=false; // update variables
+            choice3=false; // update variables
             choice1=true; // update variables
             document.getElementsByClassName('container')[0].innerHTML=choice1_formHTML; // add form choice 1 (removes form choice2)
             document.getElementById('choice2').style="color:#ffffff; background-color:#6f777d"; // set the style of choice2 as "not selected"
+            document.getElementById('choice3').style="color:#ffffff; background-color:#6f777d"; // set the style of choice3 as "not selected"
             document.getElementById('choice1').style="color:#3d4144; background-color:#60CCD2"; // set the style of choice1 as "selected
         }
     }
     else{
-        if(choice2==false){
+      if(clicked=='choice3'){
+         if(choice3==false){
+             choice2=false; // update variables
+             choice1=false; // update variables
+             choice3=true; // update variables
+             document.getElementsByClassName('container')[0].innerHTML=choice3_formHTML; // add form choice 1 (removes form choice2)
+             document.getElementById('choice2').style="color:#ffffff; background-color:#6f777d"; // set the style of choice2 as "not selected"
+             document.getElementById('choice1').style="color:#ffffff; background-color:#6f777d"; // set the style of choice1 as "not selected"
+             document.getElementById('choice3').style="color:#3d4144; background-color:#60CCD2"; // set the style of choice3 as "selected
+         }
+     }
+     else{
+         if(choice2==false){
             choice1=false;
+            choice3=false;
             choice2=true;
             document.getElementsByClassName('container')[0].innerHTML=choice2_formHTML; // add form choice 1 (removes form choice2)
             document.getElementById('choice1').style="color:#ffffff; background-color:#6f777d"; // set the style of choice1 as "not selected"
+            document.getElementById('choice3').style="color:#ffffff; background-color:#6f777d"; // set the style of choice3 as "not selected"
             document.getElementById('choice2').style="color:#3d4144; background-color:#60CCD2"; // set the style of choice2 as "selected"
-        }
+         }
+     }
     }
 
 
@@ -432,3 +451,26 @@ const choice2_formHTML = `
     value="Automatic Mitigation"> <label onclick="event.stopPropagation()" for="item147">Automatic Mitigation</label> </div>
 </form>
 `;
+
+const choice3_formHTML = `
+<form>
+<div class="checklist-item" onclick="toggleCheckbox('item1')" > <input type="checkbox" id="item1" name="checklist" value="APT"> <label for="item1">APT</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item2')" > <input type="checkbox" id="item2" name="checklist" value="Lateral Movement"> <label for="item2">Lateral Movement</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item3')" > <input type="checkbox" id="item3" name="checklist" value="Multi Objectives"> <label for="item3">Multi Objectives</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item4')" > <input type="checkbox" id="item4" name="checklist" value="Pre-Compromise"> <label for="item4">Pre-Compromise</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item5')" > <input type="checkbox" id="item5" name="checklist" value="Reusable Information"> <label for="item5">Reusable Information</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item6')" > <input type="checkbox" id="item6" name="checklist" value="Automatic Report"> <label for="item6">Automatic Report</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item7')" > <input type="checkbox" id="item7" name="checklist" value="System Response"> <label for="item7">System Response</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item8')" > <input type="checkbox" id="item8" name="checklist" value="System Overall Vulnerability Level"> <label for="item8">System Overall Vulnerability Level</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item9')" > <input type="checkbox" id="item9" name="checklist" value="Targets Overall Vulnerability Level"> <label for="item9">Targets Overall Vulnerability Level</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item10')" > <input type="checkbox" id="item10" name="checklist" value="System Overall Risk Level"> <label for="item10">System Overall Risk Level</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item11')" > <input type="checkbox" id="item11" name="checklist" value="Targets Overall Risk Level"> <label for="item11">Targets Overall Risk Level</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item12')" > <input type="checkbox" id="item12" name="checklist" value="Benchmark"> <label for="item12">Benchmark</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item13')" > <input type="checkbox" id="item13" name="checklist" value="Mitigation insights"> <label for="item13">Mitigation insights</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item14')" > <input type="checkbox" id="item14" name="checklist" value="General Vulnerability Score "> <label for="item14">General Vulnerability Score </label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item15')" > <input type="checkbox" id="item15" name="checklist" value="General Risk Score"> <label for="item15">General Risk Score</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item16')" > <input type="checkbox" id="item16" name="checklist" value="General Security Score"> <label for="item16">General Security Score</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item17')" > <input type="checkbox" id="item17" name="checklist" value="General Security Trend"> <label for="item17">General Security Trend</label> </div>
+<div class="checklist-item" onclick="toggleCheckbox('item18')" > <input type="checkbox" id="item18" name="checklist" value="Compliance"> <label for="item18">Compliance</label> </div>
+</form>
+`
