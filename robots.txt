@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matteobregola.github.io/BASTools/sitemap.xml
