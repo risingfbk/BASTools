@@ -7,8 +7,7 @@ custom_js: casestudy
 description: Case study of the framework to understand, analyse and compare Breach and Attack Simulation Tools (BAS Tools)
 ---  
 <h1>MITRE CALDERA® Case Study</h1>  
-The framework has been tested with MITRE CALDERA®. The <p>"Overall Score"</p> obtained by evaluating the mean
-over all the categories of the framework is <p>43%</p>.
+We accomplished a case study of our framework leveraging MITRE CALDERA®.This analysis has the objective of assessing the effectivness of the framework and the tool.
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <div class="charts">
@@ -51,16 +50,30 @@ over all the categories of the framework is <p>43%</p>.
 
 </br>
 
-From the results we can see that the tool has a performance that is very different based on 
-the category (<p class="it">note also the table below</p>), for example it has a very good <a href="{{'/framework/organization' | relative_url }}">"Organization"</a> result (<p>90%</p>), this is due to 
-the fact that tool is based on the MITRE ATT&CK framework that is very well structured. It is also
-important to point out that the analysis framework itself has been developed by studying MITRE ATT&CK, therefore
-this could be a biased result. 
+The data indicates that the tool's performance differs greatly based on the category. It has an
+excellent result (<p>90%</p>) in the <a href="{{'/framework/organization' | relative_url }}">"Organization"</a> category, although this outcome is partially biased since
+this category was developed taking as reference MITRE ATT&CK, and Caldera leverages it too. The
+tool performs well in the Attack and Simulation categories (<p>69%</p> and <p>71%</p>), reflecting the software's satisfactory 
+capabilities in helping red team operations. More than half of the features presented
+in <a href="{{'/framework/architecture' | relative_url }}">"Architecture"</a> are available, whereas the categories <a href="{{'/framework/other' | relative_url }}">"Other"</a> and <a href="{{'/framework/environment' | relative_url }}">"Enviroment"</a> reveal results slightly
+below the passing mark.
+</br>
+Finally, the tool has a poor score on <a href="{{'/framework/results' | relative_url }}">"Results"</a> and <a href="{{'/framework/informationfiltering' | relative_url }}">"Information and Filtering"</a> categories (respectively <p>28%</p>, <p>31%</p>). The unsatisfactory performance on the <a href="{{'/framework/results' | relative_url }}">"Results"</a> category was
+expected; this solution was born to help the red team's operations and is considered an Adversary
+Emulation Platform. For these reasons, its primary focus lies on the attack, while the support offered
+in analyzing the results and providing mitigations lags behind commercial BAS solutions. The sub-
+optimal outcome in the Information and Filtering category is because the tool's filtering is based on
+MITRE ATT&CK's, which permits filtering based on tactic, technique and platform but leaves out
+other valuable details like the APT correlation or the last update time. Furthermore, the reports are
+available in PDF, JSON, and CSV formats, but there are limited capabilities for analysing the results
+directly from the platform.
 </br></br>
-It has a notable performace also for the <a href="{{'/framework/attack' | relative_url }}">"Attack"</a> and <a href="{{'/framework/simulation' | relative_url }}">"Simulation"</a> categories (<p>69%</p> and <p>71%</p>), reflecting the good capabilities
-of the software to help red team simulations.
-</br></br>
-On the other hand it has insufficient performance on the <a href="{{'/framework/results' | relative_url }}">"Results"</a> and <a href="{{'/framework/informationfiltering' | relative_url }}">"Information and Filtering"</a> categories (respectively <p>28%</p>, <p>31%</p>).
+Overall, the tool offered 63 of the 145 analysed features, which can be considered a decedent result
+considering the intrinsic limitations of applying a Framework designed for BAS solutions to an Ad-
+versary Emulation software. The tool’s performance was notably affected by lower evaluations in
+categories that distinguish AE Tools from BAS Tools, which significantly impacted the final results.
+
+
 
 <div class="charts" id="chart2">
     <canvas id="Caldera-Results-table"></canvas>

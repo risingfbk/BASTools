@@ -14,13 +14,37 @@ description: Analysis of Breach and Attack Simulation Tools (BAS Tools)
     and allow for continuous testing. The tool aims to examine the system's security and produce results
     accordingly, outlining vulnerabilities and suggesting mitigations.
 </br></br>
-In order to reach this objective BAS Tools have different ways to interact with the system, the majority of them
-establish create a command & control channel between the system that is orhcestrating the attack operations and the "target" endpoints.
-There are other possibilities to this approach, from the simpler one that requires to launch the tests directly
-from the endpoints, to SaaS solutions. 
-</br></br>
+<h2>General Interaction</h2>
+BAS Tools have different ways to interact with the system, the majority of them adopt an agent-based approach which leverages the structure represented in the image below.
+<div class="image-container">
+    <img src="{{ 'assets_local/images/UsageMethodology.png' | relative_url }}" alt="UsageMethodology" />
+  </div>
+ The agent-based architecture presents three main components:
+<ul>
+    <li>
+        <p>Testers</p>: personnel involved in the simulation interacting with the BAS Tool. The interaction between 
+        the tester and the tool depends on the specific functionalities of the tool, which usually offers a 
+        graphical user interface.
+    </li>
+    <li>
+        <p>BAS Tools</p>: is the centre of command of all the operations, typically installed directly on devices
+        accessible to testers. The software can communicate with agents and vice-versa by leveraging a
+        command and control channel. There are several ways in which this connection is established,
+        for example, Caldera [16] requires running a payload on the agent system while other solutions
+        require installing a software on the targets.
+    </li>
+    <li>
+        <p>Agents</p> the various elements of the testers' infrastructure that will be the target of the simulation. 
+        The type of agents supported depends on the specific solution, and they can be endpoints, 
+        personal devices, servers, databases and many more.
+    </li>
+</ul>
+After having finished the pre-engagment phase the tester selects the simulation to perform and the targets. 
+The tool has established a command and control channel between the testing machines and the tested machine,
+ this channel is used to send and execute the attack payloads and then to retrieve the attack output and the
+  system response as the security logs. This data is evaluated to assess the security posture and the discovered vulnerabilities.
 
-<h2>Why?</h2>
+<h2>Advantages of BAS Tools</h2>
 It is objective that the <a href="https://www.businesswire.com/news/home/20191004005232/en/1.68-Billion-Automated-Breach-Attack-Simulation-Markets">amount</a>,
  complexity and economic damage of cyberattacks is increasing.
  Therefore, it is essential to shift the paradigm from "avoiding a breach" to "analyzing possible breaches" and testing what
@@ -36,7 +60,7 @@ It is objective that the <a href="https://www.businesswire.com/news/home/2019100
         Improve red teams' efficency, cost, performance,
     </li>
     <li>
-        Have objective results about your system security
+        Generate objective results about your system's security
     </li>
     <li>
         Test performance of acquired security solutions,
@@ -46,9 +70,27 @@ It is objective that the <a href="https://www.businesswire.com/news/home/2019100
     </li>
 </ul>
 
-<h2>Who?</h2>
-As previously mentioned, the technology has been developed for red teams users and should be 
-used as a purple team exercise to share the knowledge. However, the paradigm is shifting to facilitate 
-the work and simplify the operations in order to make these software accessible to a trained IT team or to be
+<h2>Limitations of BAS Tools</h2>
+The technology is relatively new and faces challenges both due to its novelty and inherent limitations. 
+The principal limitations of the currently available Breach and Attack Simulation Tools are:
+<ul>
+    <li>
+        Scarce accessibility,
+    </li>
+    <li>
+        Improvable automation capabilities,
+    </li>
+    <li>
+        Partial effectivness of simulations,
+    </li>
+    <li>
+        Leverage of pre-existing exploits to discover vulnerabilities,
+    </li>
+</ul>
+
+<h2>Interested Audience</h2>
+The technology has been developed to assess red teams and should be 
+imployed in a purple perspective to share the knowledge. BAS Tools are shifting their approach to facilitate 
+the work and simplify the operations; this has the objective to make these software accessible to a trained IT team or to be
 completely hosted and performed by third party companies. 
 </div>
